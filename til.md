@@ -1,3 +1,4 @@
+## Tkinter
 matplotlibとtkinterを組み合わせてデスクトップアプリを作成した場合、matplotlibのイベントループとtkinterのイベントループの両方を終了する必要がある
 ```sample.py
 ~~~省略~~~
@@ -7,6 +8,8 @@ def on_close(self):
     self.root.destroy()
 ~~~省略~~~
 ```
+
+親ウィジェット.pack_propagate(0)は、親ウィジェットが子ウィジェットのサイズに合わせてオートスケールすることを防止する
 
 ## API
 APIには次の2種類がある
