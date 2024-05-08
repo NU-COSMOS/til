@@ -10,6 +10,9 @@ def on_close(self):
 ```
 
 親ウィジェット.pack_propagate(0)は、親ウィジェットが子ウィジェットのサイズに合わせてオートスケールすることを防止する
+tkinter.PhotoImage()ではpngしか使えない
+jpgを使いたいときはfrom PIL import ImageTk, Image; ImageTk.PhotoImage(Image.open())とする
+RadioButtonではIntVar()でインスタンス生成した変数に値を持たせる。初期値はinstance.set()で設定
 
 ## API
 APIには次の2種類がある
