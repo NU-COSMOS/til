@@ -14,6 +14,15 @@ tkinter.PhotoImage()ではpngしか使えない
 jpgを使いたいときはfrom PIL import ImageTk, Image; ImageTk.PhotoImage(Image.open())とする
 RadioButtonではIntVar()でインスタンス生成した変数に値を持たせる。初期値はinstance.set()で設定
 
+tkinter.messageboxの使い方は以下の7つ
+- messagebox.showinfo()
+- messagebox.showerror()
+- messagebox.showwarning()
+- messagebox.askyesno() True or False はい/いいえの選択肢
+- messagebox.askquestion() yes or no
+- messagebox.askokcancel() True or False OK/キャンセルの選択肢
+- messagebox.askretrycancel() True or False 再試行 キャンセルの選択肢
+
 ## API
 APIには次の2種類がある
 1. Web API
