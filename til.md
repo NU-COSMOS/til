@@ -33,3 +33,8 @@ APIには次の2種類がある
 
 ## coderabbit
 github actions上でOpenAIのAPIをたたき、PRに直接レビューコメントを残してくれる
+
+## pythonで作成するデスクトップアプリのデータ保存
+- ファイルシステム(テキスト, JSON, ...)
+- SQLite
+- ConfigParser
