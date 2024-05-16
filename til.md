@@ -47,8 +47,8 @@ from googletrans import
 translator = Translator()
 after_text = translator.translate(
         before_text,
-        src=before_language_code,
-        dest=after_language_code
+        src=before_language_code,  # ex. 'ja'
+        dest=after_language_code,  # ex. 'en'
     )
 print(after_text.text)
 ```
@@ -58,8 +58,8 @@ from google.cloud import translate_v2 as translate
 translator = translate.Client()
 after_text = translator.translate(
         before_text,
-        source_language=before_language_code,
-        target_language=after_language_code
+        source_language=before_language_code,  # ex. 'ja'
+        target_language=after_language_code,  # ex. 'en'
     )
 print(after_text['translatedText'])
 ```
