@@ -38,3 +38,28 @@ github actions上でOpenAIのAPIをたたき、PRに直接レビューコメン�
 - ファイルシステム(テキスト, JSON, ...)
 - SQLite
 - ConfigParser
+
+## google翻訳API
+googletransは非公式なため、google-cloud-translateが望ましい
+- googletrans==4.0.0-rc1
+```
+from googletrans import 
+translator = Translator()
+after_text = translator.translate(
+        before_text,
+        src=before_language_code,
+        dest=after_language_code
+    )
+print(after_text.text)
+```
+- google-cloud-translate
+```
+from google.cloud import translate_v2 as translate
+translator = translate.Client()
+after_text = translator.translate(
+        before_text,
+        source_language=before_language_code,
+        target_language=after_language_code
+    )
+print(after_text['translatedText'])
+```
