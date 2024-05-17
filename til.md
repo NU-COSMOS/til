@@ -80,4 +80,13 @@ pygame.mixer.init()
 pygame.mixer.music.load(mp3_file_name)
 pygame.mixer.music.play()
 pygame.mixer.music.set_volume(0.1)
+
+# 以下よく使うコード
+pygame.mixer.music.load()
+pygame.mixer.music.play()
+pygame.mixer.music.get_busy()
+pygame.mixer.music.stop()
+pygame.mixer.music.pause()
+pygame.mixer.music.unpause()
+pygame.mixer.music.set_volume()
 ```
