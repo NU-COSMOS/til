@@ -63,3 +63,21 @@ after_text = translator.translate(
     )
 print(after_text['translatedText'])
 ```
+
+## 音源ファイル
+pygameのデフォルト設定ではmp3に対応していない
+mp3を使用する場合は以下を組み込む
+$sudo apt-get update
+$sudo apt-get install libpulse-dev
+```
+# NOTE tkinter等と併用しないと再生しない
+import os
+import pygame
+
+os.environ["SDL_AUDIODRIVER"] = "pulseaudio"
+pygame.init()
+pygame.mixer.init()
+pygame.mixer.music.load(mp3_file_name)
+pygame.mixer.music.play()
+pygame.mixer.music.set_volume(0.1)
+```
