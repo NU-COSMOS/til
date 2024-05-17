@@ -90,3 +90,10 @@ pygame.mixer.music.pause()
 pygame.mixer.music.unpause()
 pygame.mixer.music.set_volume()
 ```
+
+## ライブラリ
+### auto-py-to-exe
+pyinstallerをGUIで操作できる
+#### 使い方
+$pipenv install auto-py-to-exe
+$auto-py-to-exe
