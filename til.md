@@ -97,3 +97,17 @@ pyinstallerをGUIで操作できる
 #### 使い方
 $pipenv install auto-py-to-exe
 $auto-py-to-exe
+
+## 環境構築
+### WSLでのpyenv + pipenv
+$sudo apt update && sudo apt install -y --no-innstall-recommends \
+    build-essential \
+    libffi-dev \
+    libssl-dev \
+    zlib1g-dev \
+    libbz2-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    git
+$git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
