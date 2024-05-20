@@ -111,3 +111,5 @@ $sudo apt update && sudo apt install -y --no-innstall-recommends \
     git
 $git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
+## AWS
+S3からファイルを削除するには、バケットとオブジェクト両方のリソースに対する権限が必要
