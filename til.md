@@ -115,6 +115,10 @@ $git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 S3からファイルを削除するには、バケットとオブジェクト両方のリソースに対する権限が必要
 
 ## Unity
+ラーニングパス
+1. https://qiita.com/nmxi/items/7950fb12ef925efa276d
+2. https://fujitsu.udemy.com/course/unity-chan-tutorial-01/
+
 Update(): デフォルト。マシンのfpsに依存。
 FixedUpdate(): マシンに依存せず統一されたfpsで実行。
 LateUpdate(): 他のUpdate関数が全て実行された後に実行。
