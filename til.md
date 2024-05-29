@@ -113,3 +113,8 @@ $git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 ## AWS
 S3からファイルを削除するには、バケットとオブジェクト両方のリソースに対する権限が必要
+
+## Unity
+Update(): デフォルト。マシンのfpsに依存。
+FixedUpdate(): マシンに依存せず統一されたfpsで実行。
+LateUpdate(): 他のUpdate関数が全て実行された後に実行。
