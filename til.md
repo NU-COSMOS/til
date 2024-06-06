@@ -127,3 +127,10 @@ table.scan()とtable.query()であれば、巨大なテーブルの読み込み�
 Update(): デフォルト。マシンのfpsに依存。
 FixedUpdate(): マシンに依存せず統一されたfpsで実行。
 LateUpdate(): 他のUpdate関数が全て実行された後に実行。
+
+## git
+git stash popとgit stash applyの違い
+- git stash apply
+  スタッシュした変更を適用した後でも、そのスタッシュをスタッシュリストに保持
+- git stash pop
+  スタッシュした変更を適用した後、そのスタッシュをスタッシュリストから削除
