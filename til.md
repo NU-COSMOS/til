@@ -34,6 +34,9 @@ APIには次の2種類がある
 ## coderabbit
 github actions上でOpenAIのAPIをたたき、PRに直接レビューコメントを残してくれる
 
+## rye
+poetryやpipenvに代わるかもしれないpythonパッケージ管理ツール
+
 ## pythonで作成するデスクトップアプリのデータ保存
 - ファイルシステム(テキスト, JSON, ...)
 - SQLite
@@ -91,12 +94,15 @@ pygame.mixer.music.unpause()
 pygame.mixer.music.set_volume()
 ```
 
-## ライブラリ
+## pythonライブラリ
 ### auto-py-to-exe
 pyinstallerをGUIで操作できる
 #### 使い方
 $pipenv install auto-py-to-exe
 $auto-py-to-exe
+
+### loguru
+ログ用ライブラリ
 
 ## 環境構築
 ### WSLでのpyenv + pipenv
