@@ -142,6 +142,11 @@ git stash popとgit stash applyの違い
 - git stash pop
   スタッシュした変更を適用した後、そのスタッシュをスタッシュリストから削除
 
+LinuxからWindowsに移してgit addすると
+warning: LF will be replaced by CRLF in til.md.
+The file will have its original line endings in your working directory
+と出る。これは、Gitがファイルの行末コードを変更しようとするため。
+
 ## SQL
 - CREATE: 新しいデータベースやテーブルの定義
 - DROP: 定義したテーブルなどの削除
