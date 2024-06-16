@@ -104,6 +104,9 @@ $auto-py-to-exe
 ### loguru
 ログ用ライブラリ
 
+### kivy
+レイアウトに関する情報などはKvファイル(拡張子.kv)に書く
+
 ## 環境構築
 ### WSLでのpyenv + pipenv
 $sudo apt update && sudo apt install -y --no-innstall-recommends \
