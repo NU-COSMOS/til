@@ -162,3 +162,4 @@ Linuxを使うのであれば、`git config --global core.autocrlf input`
 pygameやtkinterを使用するならwslよりgit-bash
 現在のシェルの.bashrcは以下
 export PS1='\[\e]0;\[\033[01;32m\]\u@\h\[\033[01;33m\] \w\[\033[01;31m\] $(__git_ps1 "[%s]")\[\033[01;31m\]\[\033[01;34m\] $\[\033[00m\] '
+Unixエポック: 1970年1月1日00:00:00 UTC
