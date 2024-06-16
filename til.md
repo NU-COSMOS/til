@@ -146,6 +146,8 @@ LinuxからWindowsに移してgit addすると
 warning: LF will be replaced by CRLF in til.md.
 The file will have its original line endings in your working directory
 と出る。これは、Gitがファイルの行末コードを変更しようとするため。
+Windowsを使うのであれば、`git config --global core.autocrlf true`
+Linuxを使うのであれば、`git config --global core.autocrlf input`
 
 ## SQL
 - CREATE: 新しいデータベースやテーブルの定義
