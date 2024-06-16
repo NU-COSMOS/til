@@ -147,3 +147,6 @@ git stash popとgit stash applyの違い
 - DROP: 定義したテーブルなどの削除
 - ALTER: 定義した内容の変更
 - JOIN: テーブルの結合
+
+## その他
+pygameやtkinterを使用するならwslよりgit-bash
