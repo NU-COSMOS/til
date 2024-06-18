@@ -105,7 +105,12 @@ $auto-py-to-exe
 ログ用ライブラリ
 
 ### kivy
-レイアウトに関する情報などはKvファイル(拡張子.kv)に書く
+kivyとmatplotlibを併用する方法
+1. pipenv install kivy-garden
+2. garden install matplotlib
+3. C:/Users/{your-name}/.kivy/garden/garden.matplotlibを、{仮想環境}/Lib/site-packages/kivy/garden/に置く
+4. {仮想環境}/Lib/site-packages/kivy/garden/garden.matplotlibを{仮想環境}/Lib/site-packages/kivy/garden/matplotlibに名称変更
+5. from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAggが通るようになる
 
 ## 環境構築
 ### WSLでのpyenv + pipenv
