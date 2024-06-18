@@ -106,11 +106,24 @@ $auto-py-to-exe
 
 ### kivy
 kivyとmatplotlibを併用する方法
-1. pipenv install kivy-garden
-2. garden install matplotlib
-3. C:/Users/{your-name}/.kivy/garden/garden.matplotlibを、{仮想環境}/Lib/site-packages/kivy/garden/に置く
-4. {仮想環境}/Lib/site-packages/kivy/garden/garden.matplotlibを{仮想環境}/Lib/site-packages/kivy/garden/matplotlibに名称変更
-5. from kivy.garden.matplotlib.backend_kivyagg import FigureCanvasKivyAggが通るようになる
+1. pipenv --python 3.10
+2. pipenv shell
+3. pipenv install matplotlib
+4. pipenv install kivy
+5. pipenv install kivy_garden
+6. garden install matplotlib
+7. pipenv install kivy_garden.graph
+8. cp -r /c/Users/{アカウント名}/.kivy/garden/garden.matplotlib/ /c/Users/{アカウント名}/.virtualenvs/{仮想環境名}/Lib/site-packages/kivy_garden/
+9. mv /c/Users/{アカウント名}/.virtualenvs/{仮想環境名}/Lib/site-packages/kivy_garden/garden.matplotlib /c/Users/{アカウント名}/.virtualenvs/{仮想環境名}/Lib/site-packages/kivy_garden/matplotlib
+10. pipenv install https://github.com/kivy-garden/matplotlib/archive/master.zip
+これで
+```python
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy_garden.matplotlib.backend_kivyagg import FigureCanvasKivyAgg
+import matplotlib.pyplot as plt
+```
+が通るはず
 
 ## 環境構築
 ### WSLでのpyenv + pipenv
